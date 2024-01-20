@@ -24,9 +24,17 @@ module.exports = {
           },
         },
       },
+      transitionDuration: {
+        '2000': '2000ms',
+      },
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
         'old-standard-tt': ['Old Standard TT', 'serif'],
+      },
+      extend: {
+        textShadow: {
+          white: '0 0 4px rgba(255,255,255,0.8)', // You can adjust the shadow as needed
+        },
       },
     },
   },
