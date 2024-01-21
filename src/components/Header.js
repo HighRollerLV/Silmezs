@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { FaPhone, FaEnvelope } from 'react-icons/fa'; // Importing icons
+import React, {useState, useEffect} from 'react';
+import {FaPhone, FaEnvelope} from 'react-icons/fa'; // Importing icons
 
-const Header = () => {
+const Header = ({mainRef, interiorsRef, aboutRef, contactRef}) => {
     const [isNavVisible, setIsNavVisible] = useState(true);
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
@@ -17,15 +17,32 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [prevScrollPos]);
 
+    const scrollToSection = (sectionRef) => {
+        window.scrollTo({
+            top: sectionRef.current.offsetTop,
+            behavior: 'smooth'
+        });
+    };
+
     return (
-        <header id="navbar" className={`bg-customDark p-4 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
+        <header id="navbar"
+                className={`bg-customDark p-4 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
             <h1 className="text-4xl font-bold mb-4 animate-textAnimate font-old-standard-tt text-customGray">Silmežs</h1>
             <nav className="flex justify-center mt-10">
                 {/* Navigation items */}
-                <a href="/" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline hover:underline-offset-8">Home</a>
-                <a href="/about" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">About</a>
-                <a href="/services" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">Services</a>
-                <a href="/contact" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">Contact</a>
+                <button onClick={() => scrollToSection(mainRef)}
+                        className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">Home
+                </button>
+                <button onClick={() => scrollToSection(interiorsRef)}
+                        className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">Interior
+                </button>
+                <button onClick={() => scrollToSection(aboutRef)}
+                        className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">About
+                    Us
+                </button>
+                <button onClick={() => scrollToSection(contactRef)}
+                        className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">Contact
+                </button>
             </nav>
 
             {/* Contact section with icons */}
