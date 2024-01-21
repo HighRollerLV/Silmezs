@@ -23,7 +23,7 @@ const Interiors = () => {
     return (
         <section className="bg-customGray text-customDark">
             <div className="mx-auto p-4">
-                <h2 className="mt-32 mb-10 text-3xl font-bold tracking-wider">Interior</h2>
+                <h2 className="mt-16 mb-10 text-3xl font-bold tracking-wider">Interior</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 mb-20">
                     {interiors.map((interior, index) => (
                         <div key={index} className="relative overflow-hidden">
