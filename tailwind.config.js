@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         customDarkGray: '#B9B9B9',
+        customDarkerGray: '#848484',
         customGray: '#C0C0C0',
         customPurple: '#561336',
         customRed: '#984d64',
@@ -18,10 +19,11 @@ module.exports = {
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],
         'old-standard-tt': ['Old Standard TT', 'serif'],
+        'tajawal': ['Tajawal', 'sans'],
       },
       extend: {
         textShadow: {
-          white: '0 0 4px rgba(255,255,255,0.8)', // You can adjust the shadow as needed
+          white: '0 0 4px rgba(255,255,255,0.8)',
         },
       },
     },
