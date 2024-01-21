@@ -4,7 +4,7 @@ const ContactForm = () => {
     return (
         <div className="bg-customGray p-32 text-customDark">
             <div className="flex flex-col md:flex-row gap-10">
-                <div className="w-full md:w-1/2 mb-8 md:mb-0 text-customGray bg-customDark px-5 py-5 rounded-md">
+                <div className="w-full md:w-1/2 mb-8 md:mb-0 text-customGray bg-customDark px-6 py-6 rounded-md">
                     <h2 className="text-5xl font-semibold mb-4">Contact Information</h2>
                     <p className="mb-2 text-2xl"><span className="font-bold">Street: </span>Valdemara, bld. 159</p>
                     <p className="mb-2 text-2xl"><span className="font-bold">City: </span>Riga, LV-1010</p>
