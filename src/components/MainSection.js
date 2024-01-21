@@ -66,7 +66,7 @@ const MainSection = () => {
     const { title, description} = categoryDetails[category];
 
     return (
-        <section className="relative bg-customGray text-customDark overflow-hidden h-screen mt-24">
+        <section className="relative bg-customGray text-customDark overflow-hidden h-screen mt-32">
             <div className="flex flex-row h-full">
                 {/* Logo */}
                 <div className="w-1/3 flex justify-start items-start bg-customDarkGray">

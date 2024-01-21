@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { FaPhone, FaEnvelope } from 'react-icons/fa'; // Importing icons
 
 const Header = () => {
+    const [isNavVisible, setIsNavVisible] = useState(true);
     const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.scrollY;
-            const visible = prevScrollPos > currentScrollPos;
-
-            document.getElementById("navbar").style.top = visible ? "0" : "-50px";
+            setIsNavVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
             setPrevScrollPos(currentScrollPos);
         };
 
@@ -19,9 +18,9 @@ const Header = () => {
     }, [prevScrollPos]);
 
     return (
-        <header id="navbar" className="bg-customDark p-4 text-center fixed w-full transition-transform duration-300 z-50" style={{ top: '0' }}>
+        <header id="navbar" className={`bg-customDark p-4 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
             <h1 className="text-4xl font-bold mb-4 animate-textAnimate font-old-standard-tt text-customGray">Silmežs</h1>
-            <nav className="flex justify-center">
+            <nav className="flex justify-center mt-10">
                 {/* Navigation items */}
                 <a href="/" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline hover:underline-offset-8">Home</a>
                 <a href="/about" className="text-customGray mx-4 ease-in-out transition duration-300 hover:underline underline-offset-8">About</a>
