@@ -11,7 +11,7 @@ const categoryDetails = {
         description: "Explore the purity and openness of glass designs.",
         image: '/images/Glass.jpg',
     },
-    Open: {
+    Classic: {
         title: "Vintage",
         description: "Embrace culture and vintage style of living.",
         image: '/images/Classic.jpg',
@@ -66,10 +66,10 @@ const MainSection = () => {
     const { title, description} = categoryDetails[category];
 
     return (
-        <section className="relative bg-customGray text-customDark overflow-hidden h-screen mt-32">
+        <section className="relative bg-customGray text-customDark overflow-hidden h-screen md:mt-36">
             <div className="flex flex-row h-full">
                 {/* Logo */}
-                <div className="w-1/3 flex justify-start items-start bg-customDarkGray">
+                <div className="w-1/3 hidden md:flex justify-start items-start bg-customDarkGray">
                     <img
                         src="/images/Logo.jpg"
                         alt="Logo"
@@ -77,14 +77,14 @@ const MainSection = () => {
                     />
                 </div>
                 {/*Title and Description*/}
-                <div className="bg-customDark md:w-[40%] w-full h-1/3 md:h-2/5 absolute z-20 md:ml-72 mt-72 shadow-2xl">
-                    <div className="flex flex-col items-start justify-center h-full pl-10">
-                        <h2 className="text-4xl md:text-6xl font-semibold mb-4 text-customGray text-center">{title}</h2>
-                        <p className="text-lg md:text-xl text-customGray text-center">{description}</p>
+                <div className="bg-customDark w-full md:w-1/2 xl:w-[40%] h-1/3 md:h-2/5 absolute z-20 md:ml-40 xl:ml-72 mt-72 shadow-2xl">
+                    <div className="flex flex-col items-center md:items-start justify-center h-full pl-10">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-customGray">{title}</h2>
+                        <p className="text-lg lg:text-xl text-customGray">{description}</p>
                     </div>
                 </div>
                 {/* Design Image */}
-                <div className="w-2/3 relative">
+                <div className="w-full md:w-2/3 relative">
                     {Object.values(categoryDetails).map((item, index) => (
                         <div
                             key={item.image}
