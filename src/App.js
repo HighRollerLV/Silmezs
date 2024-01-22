@@ -1,5 +1,5 @@
 // App.js
-import React, { useRef } from 'react';
+import React, {useRef} from 'react';
 import Header from "./components/Header";
 import MainSection from "./components/MainSection";
 import Footer from "./components/Footer";
@@ -21,11 +21,11 @@ const App = () => {
                 aboutRef={aboutUsRef}
                 contactRef={contactUsRef}
             />
-            <div ref={mainSectionRef}><MainSection /></div>
-            <div ref={interiorsRef}><Interiors /></div>
-            <div ref={aboutUsRef}><AboutUs /></div>
-            <div ref={contactUsRef}><ContactUs /></div>
-            <Footer />
+            <div ref={mainSectionRef}><MainSection/></div>
+            <div ref={interiorsRef}><Interiors/></div>
+            <div ref={aboutUsRef}><AboutUs/></div>
+            <div ref={contactUsRef}><ContactUs/></div>
+            <Footer/>
         </div>
     );
 };

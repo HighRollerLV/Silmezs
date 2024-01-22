@@ -1,5 +1,7 @@
 /* index.css */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +9,7 @@
 
 body {
   margin: 0;
-  font-family: 'Bodoni', serif; /* Use Lora as the default font */
+  font-family: 'Bodoni Moda', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

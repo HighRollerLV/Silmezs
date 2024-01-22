@@ -27,7 +27,6 @@ const MainSection = () => {
     const [category, setCategory] = useState('Marble');
     const [isAutomatic, setIsAutomatic] = useState(true);
 
-    // This effect sets up the automatic switching
     useEffect(() => {
         let intervalId;
         if (isAutomatic) {
@@ -63,7 +62,7 @@ const MainSection = () => {
         };
     }, []);
 
-    const { title, description} = categoryDetails[category];
+    const {title, description} = categoryDetails[category];
 
     return (
         <section className="relative bg-customGray text-customDark overflow-hidden h-screen md:mt-36">
@@ -77,9 +76,10 @@ const MainSection = () => {
                     />
                 </div>
                 {/*Title and Description*/}
-                <div className="bg-customDark w-full md:w-1/2 xl:w-[40%] h-1/3 md:h-2/5 absolute z-20 md:ml-40 xl:ml-72 mt-72 shadow-2xl">
+                <div
+                    className="bg-customDark w-full md:w-1/2 xl:w-[40%] h-1/3 md:h-2/5 absolute z-20 md:ml-40 xl:ml-72 mt-72 shadow-2xl">
                     <div className="flex flex-col items-center md:items-start justify-center h-full pl-10">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-customGray">{title}</h2>
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-customGray font-dancing-script">{title}</h2>
                         <p className="text-lg lg:text-xl text-customGray">{description}</p>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ const MainSection = () => {
                             className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ease-in-out ${
                                 category === Object.keys(categoryDetails)[index] ? 'opacity-100' : 'opacity-0'
                             }`}
-                            style={{ backgroundImage: `url('${item.image}')` }}
+                            style={{backgroundImage: `url('${item.image}')`}}
                         />
                     ))}
                     {/* Buttons */}
