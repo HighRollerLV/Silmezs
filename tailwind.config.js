@@ -20,6 +20,7 @@ module.exports = {
         'sans': ['Montserrat', 'sans-serif'],
         'old-standard-tt': ['Old Standard TT', 'serif'],
         'tajawal': ['Tajawal', 'sans'],
+        'classico': ['Classico', 'sans'],
       },
       extend: {
         textShadow: {

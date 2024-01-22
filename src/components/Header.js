@@ -29,7 +29,7 @@ const Header = ({ mainRef, interiorsRef, aboutRef, contactRef }) => {
     return (
         <header id="navbar" className={`bg-customDark p-4 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
             <div className="flex justify-between md:justify-center items-center">
-                <h1 className="text-4xl font-bold mb-4 animate-textAnimate font-old-standard-tt text-customGray">Silmežs</h1>
+                <h1 className="text-4xl lg:text-5xl font-bold mb-4 animate-textAnimate text-customGray">Silmežs</h1>
 
                 {/* Burger menu icon */}
                 <div className="md:hidden">
@@ -48,11 +48,11 @@ const Header = ({ mainRef, interiorsRef, aboutRef, contactRef }) => {
             </nav>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex justify-center mt-10">
-                <button onClick={() => scrollToSection(mainRef)} className="text-customGray mx-4">Home</button>
-                <button onClick={() => scrollToSection(interiorsRef)} className="text-customGray mx-4">Interior</button>
-                <button onClick={() => scrollToSection(aboutRef)} className="text-customGray mx-4">About Us</button>
-                <button onClick={() => scrollToSection(contactRef)} className="text-customGray mx-4">Contact</button>
+            <nav className="hidden md:flex justify-center mt-6 text-xl">
+                <button onClick={() => scrollToSection(mainRef)} className="text-customGray mx-4 hover:underline hover:underline-offset-8">Home</button>
+                <button onClick={() => scrollToSection(interiorsRef)} className="text-customGray mx-4 hover:underline hover:underline-offset-8">Interior</button>
+                <button onClick={() => scrollToSection(aboutRef)} className="text-customGray mx-4 hover:underline hover:underline-offset-8">About Us</button>
+                <button onClick={() => scrollToSection(contactRef)} className="text-customGray mx-4 hover:underline hover:underline-offset-8">Contact</button>
             </nav>
 
             {/* Contact section with icons */}
