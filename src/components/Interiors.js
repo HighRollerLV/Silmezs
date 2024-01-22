@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useMemo} from 'react';
-import { IoMdArrowRoundForward, IoMdArrowRoundBack } from 'react-icons/io';
+import {IoMdArrowRoundForward, IoMdArrowRoundBack} from 'react-icons/io';
 
 const Interiors = () => {
     const interiors = useMemo(() => [
@@ -55,7 +55,7 @@ const Interiors = () => {
                             <button
                                 onClick={() => switchImage(index, -1)}
                                 className="absolute left-0 bottom-7 transform -translate-y-1/2 z-10 bg-customDark p-1 text-customGray hover:bg-customLight hover:scale-105 focus:scale-95 transition duration-300 ease-in-out">
-                                <IoMdArrowRoundBack />
+                                <IoMdArrowRoundBack/>
                             </button>
                             {interior.images.map((image, imgIndex) => (
                                 <img
@@ -70,7 +70,7 @@ const Interiors = () => {
                             <button
                                 onClick={() => switchImage(index, 1)}
                                 className="absolute right-0 bottom-7 transform -translate-y-1/2 z-10 bg-customDark p-1 text-customGray hover:bg-customLight hover:scale-105 focus:scale-95 transition duration-300 ease-in-out">
-                                <IoMdArrowRoundForward />
+                                <IoMdArrowRoundForward/>
                             </button>
                             <p className="text-xl font-semibold underline underline-offset-8 mt-1 mb-2">{interior.name}</p>
                         </div>
