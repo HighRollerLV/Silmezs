@@ -11,7 +11,7 @@ module.exports = {
                 customPurple: '#561336',
                 customRed: '#984d64',
                 customGold: '#bf9027',
-                customDark: '#220e19',
+                customDark: '#7a0707',
             },
             transitionDuration: {
                 '2000': '2000ms',

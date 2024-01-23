@@ -70,7 +70,7 @@ const MainSection = () => {
                 {/* Logo */}
                 <div className="w-1/3 hidden md:flex justify-start items-start bg-customDarkGray">
                     <img
-                        src="/images/Logo.jpg"
+                        src="/images/MainLogo.jpg"
                         alt="Logo"
                         className="w-40 h-40"
                     />
@@ -100,7 +100,7 @@ const MainSection = () => {
                             <button
                                 key={cat}
                                 className={`py-2 px-6 rounded-full ${
-                                    category === cat ? 'bg-customPurple' : 'bg-customDark'
+                                    category === cat ? 'bg-customGray' : 'bg-customDark'
                                 } text-customGray`}
                                 onClick={() => handleCategoryChange(cat)}
                             >
