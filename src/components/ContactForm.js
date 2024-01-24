@@ -5,7 +5,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/f
 
 const ContactForm = ({ onClose }) => {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center p-4 z-50">
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center p-4 z-60">
             <div className="bg-customDark rounded-lg w-full max-w-4xl mx-auto overflow-hidden">
                 <div className="flex flex-col md:flex-row">
                     <div className="relative md:w-1/2 p-4 lg:p-8 bg-customDark"> {/* Assuming this is the red box */}

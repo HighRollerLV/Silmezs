@@ -24,10 +24,8 @@ module.exports = {
                 sevillana: ['Sevillana', 'sans'],
                 'dancing-script': ['Dancing Script', 'cursive'],
             },
-            extend: {
-                textShadow: {
-                    white: '0 0 4px rgba(255,255,255,0.8)',
-                },
+            zIndex: {
+                '60' : '60',
             },
         },
     },
