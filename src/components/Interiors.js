@@ -10,18 +10,63 @@ const Interiors = () => {
                 {
                     name: 'Living Room',
                     representativeImage: '/images/ClassicLivingRoom.jpg',
-                    images: ['/images/ClassicLivingRoom2.jpg', '/images/ClassicLivingRoom3.jpg']
+                    images: ['/images/ClassicLivingRoom2.jpg', '/images/ClassicLivingRoom3.jpg', '/images/ClassicLivingRoom4.jpg', '/images/ClassicLivingRoom5.jpg']
                 },
                 {
                     name: 'Bathroom',
                     representativeImage: '/images/ClassicBathroom.jpg',
-                    images: ['/images/ClassicBathroom2.jpg']
+                    images: ['/images/ClassicBathroom2.jpg', '/images/ClassicBathroom3.jpg', '/images/ClassicBathroom4.jpg']
                 },
             ],
         },
-        {name: 'Open', images: ['/images/Glass.jpg', '/images/Glass2.jpg', '/images/Glass3.jpg']},
-        {name: 'Marble', images: ['/images/Marble.jpg', '/images/Marble2.jpg', '/images/Marble3.jpg']},
-        {name: 'Modern', images: ['/images/Modern.jpg', '/images/Modern2.jpg', '/images/Modern3.jpg']},
+        {
+            name: 'Open',
+            images: ['/images/Glass.jpg', '/images/Glass2.jpg', '/images/Glass3.jpg'],
+            categories: [
+                {
+                    name: 'Bedroom',
+                    representativeImage: '/images/OpenBedroom.jpg',
+                    images: ['/images/OpenBedroom2.jpg', '/images/OpenBedroom3.jpg', '/images/OpenBedroom4.jpg']
+                },
+                {
+                    name: 'Living Room',
+                    representativeImage: '/images/OpenLivingRoom.jpg',
+                    images: ['/images/OpenLivingRoom2.jpg', '/images/OpenLivingRoom3.jpg', '/images/OpenLivingRoom4.jpg']
+                },
+            ],
+        },
+        {
+            name: 'Marble',
+            images: ['/images/Marble.jpg', '/images/Marble2.jpg', '/images/Marble3.jpg'],
+            categories: [
+                {
+                    name: 'Office',
+                    representativeImage: '/images/MarbleOffice.jpg',
+                    images: ['/images/MarbleOffice2.jpg', '/images/MarbleOffice3.jpg', '/images/MarbleOffice4.jpg']
+                },
+                {
+                    name: 'Living Room',
+                    representativeImage: '/images/MarbleLivingRoom.jpg',
+                    images: ['/images/MarbleLivingRoom2.jpg', '/images/MarbleLivingRoom3.jpg', '/images/MarbleLivingRoom4.jpg']
+                },
+            ],
+        },
+        {
+            name: 'Modern',
+            images: ['/images/Modern.jpg', '/images/Modern2.jpg', '/images/Modern3.jpg'],
+            categories: [
+                {
+                    name: 'Bathroom',
+                    representativeImage: '/images/ModernBathroom.jpg',
+                    images: ['/images/ModernBathroom2.jpg', '/images/ModernBathroom3.jpg', '/images/ModernBathroom4.jpg']
+                },
+                {
+                    name: 'Kitchen',
+                    representativeImage: '/images/ModernKitchen.jpg',
+                    images: ['/images/ModernKitchen2.jpg', '/images/ModernKitchen3.jpg', '/images/ModernKitchen4.jpg']
+                },
+            ],
+        },
     ], []);
 
     const [imageIndexes, setImageIndexes] = useState(interiors.map(() => 0));
@@ -59,8 +104,9 @@ const Interiors = () => {
     };
 
     const selectCategory = (category) => {
+        const categoryIndex = selectedInterior.categories.findIndex(c => c.name === category.name);
         setSelectedCategory(category);
-        setSelectedCategoryIndex(0);
+        setSelectedCategoryIndex(categoryIndex);
         setIsCategoryPaused(false);
     };
 
@@ -119,7 +165,7 @@ const Interiors = () => {
                         </div>
                     ))}
                 </div>
-                {selectedInterior && (
+                {selectedInterior && selectedInterior.categories[selectedCategoryIndex] && (
                     <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex justify-center items-center">
                         <div className="w-3/4 md:w-1/2 lg:w-1/3 flex flex-col">
                             <div className="relative">
