@@ -1,29 +1,50 @@
-// App.js
+// src/App.js
 import React, {useRef} from 'react';
-import Header from "./components/Header";
-import MainSection from "./components/MainSection";
-import Footer from "./components/Footer";
-import Interiors from "./components/Interiors";
-import AboutUs from "./components/About";
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import OurMission from './components/OurMission';
+import AboutUs from './components/AboutUs';
+import Services from './components/Services';
+import ProductSlider from './components/ProductSlider';
+import Footer from './components/Footer';
+import './index.css';
 
-const App = () => {
-    const mainSectionRef = useRef(null);
-    const interiorsRef = useRef(null);
-    const aboutUsRef = useRef(null);
+function App() {
+    const HeroSectionRef = useRef(null);
+    const OurMissionRef = useRef(null);
+    const AboutUsRef = useRef(null);
+    const ServicesRef = useRef(null);
+    const ProductSliderRef = useRef(null);
+    const sliderImages = ['/images/OpenBedroom.jpg', '/images/OpenBedroom2.jpg', '/images/OpenBedroom3.jpg', '/images/OpenBedroom4.jpg'];
 
     return (
-        <div>
+        <div className="App">
             <Header
-                mainRef={mainSectionRef}
-                interiorsRef={interiorsRef}
-                aboutRef={aboutUsRef}
+                HeroSectionRef={HeroSectionRef}
+                OurMissionRef={OurMissionRef}
+                AboutUsRef={AboutUsRef}
+                ServicesRef={ServicesRef}
+                ProductSliderRef={ProductSliderRef}
             />
-            <div ref={mainSectionRef}><MainSection/></div>
-            <div ref={interiorsRef}><Interiors/></div>
-            <div ref={aboutUsRef}><AboutUs/></div>
+            <main>
+                <div ref={HeroSectionRef}>
+                    <HeroSection/>
+                </div>
+                <div ref={OurMissionRef}>
+                    <OurMission/>
+                </div>
+                <div ref={AboutUsRef}>
+                    <AboutUs/>
+                </div>
+                <div ref={ServicesRef}>
+                    <Services/>
+                </div>
+                <div ref={ProductSliderRef}>
+                    <ProductSlider images={sliderImages}/>
+                </div>
+            </main>
             <Footer/>
         </div>
     );
-};
-
+}
 export default App;
