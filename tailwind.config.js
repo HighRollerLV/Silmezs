@@ -11,7 +11,10 @@ module.exports = {
                 customPurple: '#561336',
                 customRed: '#984d64',
                 customGold: '#bf9027',
-                customDark: '#800020',
+                customDark: '#6A001A',
+                light: '#C0C0C0',
+                DEFAULT: '#A8A8A8',
+                dark: '#808080',
             },
             transitionDuration: {
                 '2000': '2000ms',
@@ -23,9 +26,10 @@ module.exports = {
                 'classico': ['Classico', 'sans'],
                 sevillana: ['Sevillana', 'sans'],
                 'dancing-script': ['Dancing Script', 'cursive'],
+                greatVibes: ['Great Vibes', 'cursive'],
             },
             zIndex: {
-                '60' : '60',
+                '60': '60',
             },
         },
     },

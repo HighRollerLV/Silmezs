@@ -25,7 +25,7 @@ const Header = ({HeroSectionRef, OurMissionRef, AboutUsRef, ServicesRef, Product
 
     return (
         <header id="navbar"
-                className={`bg-customDark p-2 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
+                className={`bg-customDark shadow-2xl p-2 text-center fixed w-full z-50 transition-all duration-300 ease-in-out ${isNavVisible ? 'top-0' : '-top-20'}`}>
             <div className="flex justify-between md:justify-center items-center">
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4 animate-textAnimate text-white font-dancing-script md:hidden">Silmežs</h1>
                 {/* Burger menu icon */}
@@ -65,7 +65,7 @@ const Header = ({HeroSectionRef, OurMissionRef, AboutUsRef, ServicesRef, Product
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex justify-center text-xl gap-2">
-                <h1 className="text-2xl font-bold mb-1 pr-10 text-white hidden md:flex">Silmežs</h1>
+                <h1 className="text-2xl font-bold mt-1 pr-10 text-white hidden md:flex font-greatVibes">Silmežs</h1>
                 <button onClick={() => scrollToSection(HeroSectionRef)}
                         className="text-white hover:underline hover:underline-offset-8 px-4 border-r-2 pl-0">Home
                 </button>

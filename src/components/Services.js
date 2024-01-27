@@ -30,15 +30,19 @@ const Services = () => {
     ];
 
     return (
-        <div id="services" className="my-16 flex flex-col items-center">
-            <h2 className="text-6xl font-bold text-center">Services</h2>
-            <div className="w-10 h-1 bg-black mt-4"></div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8 px-72">
+        <div id="services" className="py-16 flex flex-col items-center bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300">
+            <h2 className="text-4xl md:text-6xl font-bold text-center font-greatVibes text-customDark">Services</h2>
+            <div className="w-10 h-1 mt-4 bg-customDark"></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 px-4 md:px-8 2xl:px-72">
                 {services.map(service => (
                     <div key={service.id} className="text-center flex flex-col items-center gap-2 mx-2">
-                        <div className="text-5xl mb-2 border-black border-4 rounded-full p-10">{service.icon}</div>
-                        <h3 className="text-xl font-semibold">{service.title}</h3>
-                        <p className="mt-10 px-2">{service.description}</p>
+                        <div className="flex items-center justify-center mb-2 border-customDark border-4 text-customDark rounded-full p-4 sm:p-6 md:p-8 lg:p-10">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 xl:w-32 xl:h-32 flex items-center justify-center">
+                                {service.icon}
+                            </div>
+                        </div>
+                        <h3 className="text-lg md:text-xl font-semibold">{service.title}</h3>
+                        <p className="mt-10 px-2 text-sm md:text-base">{service.description}</p>
                     </div>
                 ))}
             </div>

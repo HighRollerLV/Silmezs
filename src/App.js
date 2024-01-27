@@ -1,4 +1,3 @@
-// src/App.js
 import React, {useRef} from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
@@ -15,7 +14,10 @@ function App() {
     const AboutUsRef = useRef(null);
     const ServicesRef = useRef(null);
     const ProductSliderRef = useRef(null);
-    const sliderImages = ['/images/OpenBedroom.jpg', '/images/OpenBedroom2.jpg', '/images/OpenBedroom3.jpg', '/images/OpenBedroom4.jpg'];
+    const sliderImages = ['/images/OpenBedroom.jpg', '/images/OpenBedroom2.jpg',
+        '/images/OpenBedroom3.jpg', '/images/OpenBedroom4.jpg', '/images/MarbleOffice.jpg',
+        '/images/MarbleOffice2.jpg', '/images/MarbleOffice3.jpg', '/images/MarbleOffice4.jpg',
+        '/images/OpenLivingRoom.jpg'];
 
     return (
         <div className="App">
@@ -47,4 +49,5 @@ function App() {
         </div>
     );
 }
+
 export default App;

@@ -35,17 +35,17 @@ const ContactUsModal = ({ isOpen, onClose }) => {
                         <p className="text-white"><span className="font-bold">Phone: </span>+371 29 123 457</p>
                         <div className="flex mt-4">
                             {/* Social Media Links */}
-                            <a href="/facebook" className="text-white hover:text-white transition mx-2">
-                                <FaFacebookF />
+                            <a href="/facebook" className="hover:text-customGray text-white transition mx-2">
+                                <FaFacebookF/>
                             </a>
-                            <a href="/twitter" className="text-white hover:text-white transition mx-2">
-                                <FaTwitter />
+                            <a href="/twitter" className="hover:text-customGray text-white transition mx-2">
+                                <FaTwitter/>
                             </a>
-                            <a href="/instagram" className="text-white hover:text-white transition mx-2">
-                                <FaInstagram />
+                            <a href="/instagram" className="hover:text-customGray text-white transition mx-2">
+                                <FaInstagram/>
                             </a>
-                            <a href="/linkedin" className="text-white hover:text-white transition mx-2">
-                                <FaLinkedinIn />
+                            <a href="/linkedin" className="hover:text-customGray text-white transition mx-2">
+                                <FaLinkedinIn/>
                             </a>
                         </div>
                         <div className="absolute bottom-4 right-4">
