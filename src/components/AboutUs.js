@@ -12,7 +12,7 @@ const AboutUs = () => {
                 </h2>
 
                 <p className="px-4 2xl:px-36 text-center text-sm md:text-base text-white">
-                    Silmežs, founded in 2010, has been at the forefront of interior design, blending contemporary aesthetics with functional elegance. Our team of expert designers is dedicated to creating spaces that reflect our clients' unique personalities and lifestyles. With a focus on sustainability and artistry, we transform ordinary spaces into extraordinary homes and offices. Join us in our journey to redefine interior design.
+                    Amarant, founded in 2010, has been at the forefront of interior design, blending contemporary aesthetics with functional elegance. Our team of expert designers is dedicated to creating spaces that reflect our clients' unique personalities and lifestyles. With a focus on sustainability and artistry, we transform ordinary spaces into extraordinary homes and offices. Join us in our journey to redefine interior design.
                 </p>
 
                 <p className="px-4 2xl:px-36 text-center text-sm md:text-base text-white">

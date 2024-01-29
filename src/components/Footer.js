@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="bg-customDark text-white p-4">
             <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
                 <div>
-                    <p className="text-sm">Silmežs Interior Design</p>
+                    <p className="text-sm">Amarant Interior Design</p>
                     <p className="text-xs">123 Design Street, Creativity City</p>
                     <p className="text-xs">Phone: (123) 456-7890</p>
                 </div>
@@ -27,8 +27,8 @@ const Footer = () => {
                     </a>
                 </div>
                 <div>
-                    <p className="text-sm">Email: contact@silmezdesign.com</p>
-                    <p className="text-center text-xs">© {currentYear} Silmežs Interior Design. All rights reserved.</p>
+                    <p className="text-sm">Email: contact@amarantdesign.com</p>
+                    <p className="text-center text-xs">© {currentYear} Amarant Interior Design. All rights reserved.</p>
                 </div>
             </div>
         </footer>

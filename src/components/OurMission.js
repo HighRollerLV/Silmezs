@@ -17,7 +17,7 @@ const OurMission = () => {
             <div className="w-10 h-1 bg-customDark mt-4"></div>
             <div className="px-4 sm:px-10 md:px-20 lg:px-32 xl:px-48 text-center pb-6">
                 <p className="mt-4 text-sm sm:text-base md:text-lg">
-                    Our mission at Silmežs is to redefine the essence of living and working spaces. We believe in crafting environments that resonate with the personal style and functional needs of our clients. Our approach combines modern design principles with timeless elegance, ensuring each space we create is not only aesthetically pleasing but also practical and sustainable.
+                    Our mission at Amarant is to redefine the essence of living and working spaces. We believe in crafting environments that resonate with the personal style and functional needs of our clients. Our approach combines modern design principles with timeless elegance, ensuring each space we create is not only aesthetically pleasing but also practical and sustainable.
                 </p>
                 <p className="text-lg md:text-xl mt-4 font-bold">Let's make your dreams become reality.</p>
             </div>
