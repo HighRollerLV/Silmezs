@@ -21,7 +21,7 @@ const OurMission = () => {
                 </p>
                 <p className="text-lg md:text-xl mt-4 font-bold">Let's make your dreams become reality.</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-52">
                 {[1, 2, 3, 4, 5, 6].map((item, index) => (
                     <div
                         key={item}
