@@ -31,7 +31,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
                             <AiOutlineClose size={24} />
                         </button>
                         <h2 className="text-xl md:text-2xl text-white font-semibold mb-4">Contact Information</h2>
-                        <p className="text-white"><span className="font-bold">Email: </span>Silmežs@example.com</p>
+                        <p className="text-white"><span className="font-bold">Email: </span>Amarant@example.com</p>
                         <p className="text-white"><span className="font-bold">Phone: </span>+371 29 123 457</p>
                         <div className="flex mt-4">
                             {/* Social Media Links */}
@@ -49,7 +49,7 @@ const ContactUsModal = ({ isOpen, onClose }) => {
                             </a>
                         </div>
                         <div className="absolute bottom-4 right-4">
-                            <img src="/images/GrayLogo.jpg" alt="Logo" className="w-16 h-16 md:w-24 md:h-24" />
+                            <img src="/images/Amarant.jpg" alt="Logo" className="w-16 h-16 md:w-32 md:h-28 bg-white rounded-2xl shadow" />
                         </div>
                     </div>
                     <div className="md:w-1/2 bg-white p-4 lg:p-8">
